@@ -11,17 +11,17 @@ function setup() {
   
     database = firebase.database();
     user = new User();
-    login = new Login();
-    //admin = new Admin();
+    //login = new Login();
+    admin = new Admin();
    
     
   }
   
   function draw() {
    
-    background(loginImg);
-  // admin.display();
-   login.display();
+    background(adminImg);
+  admin.display();
+   //login.display();
    login.mySelectEvent()
     
   }
